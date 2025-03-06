@@ -1,0 +1,22 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  ai:
+    openai:
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.7
+      api-key: sk-1f81847888c44e70b0f2e59eeafed994
+      base-url: https://api.deepseek.com
+      embedding:
+        enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:rm-bp191gmb2r41obomr.rwlb.rds.aliyuncs.com}:${MYSQL_REAL_PORT:3306}/${MYSQL_DB:ar_training_service}?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: ${MYSQL_USER:sysdba}
+    password: ${MYSQL_PASSWORD:Rokid@2023}
+  data:
+    redis:
+      uri: r-bp1nq29kupvzls7jys.redis.rds.aliyuncs.com

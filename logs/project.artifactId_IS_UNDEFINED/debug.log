@@ -1,0 +1,339 @@
+2025-02-27 16:51:22,110 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 41850 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 16:51:22,111 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:660 - The following 1 profile is active: "dev"
+2025-02-27 16:51:22,829 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-02-27 16:51:23,064 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 16:51:23,071 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 16:51:23,072 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 16:51:23,072 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 16:51:23,108 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 16:51:23,108 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 871 ms
+2025-02-27 16:51:23,507 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 16:51:23,597 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - traceId:  AbstractApplicationContext.java:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine suitable jdbc url
+2025-02-27 16:51:23,599 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Stopping service [Tomcat]
+2025-02-27 16:51:23,607 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 16:51:23,615 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] - traceId:  LoggingFailureAnalysisReporter.java:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-02-27 17:01:35,725 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 42915 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:01:35,727 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:660 - The following 1 profile is active: "dev"
+2025-02-27 17:01:35,902 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:01:36,297 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:01:36,574 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:01:36,583 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:01:36,584 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:01:36,584 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:01:36,635 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:01:36,635 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 788 ms
+2025-02-27 17:01:37,109 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:01:37,205 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - traceId:  AbstractApplicationContext.java:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine suitable jdbc url
+2025-02-27 17:01:37,207 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Stopping service [Tomcat]
+2025-02-27 17:01:37,225 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:01:37,233 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] - traceId:  LoggingFailureAnalysisReporter.java:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-02-27 17:02:22,919 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 42955 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:02:22,921 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:660 - The following 1 profile is active: "dev"
+2025-02-27 17:02:23,063 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:02:23,372 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:02:23,624 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:02:23,631 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:02:23,633 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:02:23,633 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:02:23,679 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:02:23,679 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 654 ms
+2025-02-27 17:02:24,111 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:02:24,210 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - traceId:  AbstractApplicationContext.java:633 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine suitable jdbc url
+2025-02-27 17:02:24,212 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Stopping service [Tomcat]
+2025-02-27 17:02:24,220 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:02:24,228 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] - traceId:  LoggingFailureAnalysisReporter.java:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine suitable jdbc url
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2025-02-27 17:03:39,052 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 42994 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:03:39,054 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:660 - The following 1 profile is active: "dev"
+2025-02-27 17:03:39,207 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:03:39,559 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:03:39,826 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:03:39,834 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:03:39,835 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:03:39,835 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:03:39,876 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:03:39,876 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 718 ms
+2025-02-27 17:03:40,323 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:03:40,573 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:03:40,578 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:03:40,586 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 2.731 seconds (process running for 3.351)
+2025-02-27 17:03:40,588 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:03:40,602 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:06:14,073 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43027 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:06:14,074 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:660 - The following 1 profile is active: "dev"
+2025-02-27 17:06:14,219 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:06:14,556 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:06:14,815 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:06:14,823 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:06:14,824 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:06:14,824 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:06:14,865 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:06:14,866 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 688 ms
+2025-02-27 17:06:15,291 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:06:15,535 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:06:15,541 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:06:15,549 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.714 seconds (process running for 2.189)
+2025-02-27 17:06:15,551 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:06:15,559 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:06:55,471 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43075 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:06:55,473 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:06:55,646 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:06:55,982 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:06:56,244 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:06:56,252 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:06:56,253 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:06:56,253 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:06:56,293 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:06:56,293 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 697 ms
+2025-02-27 17:06:56,731 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:06:56,968 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:06:56,979 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:06:56,986 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.694 seconds (process running for 2.261)
+2025-02-27 17:06:56,988 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:06:56,995 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:08:37,557 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43090 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:08:37,559 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:08:37,712 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:08:38,046 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:08:38,311 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:08:38,319 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:08:38,319 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:08:38,319 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:08:38,360 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:08:38,361 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 694 ms
+2025-02-27 17:08:38,795 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:08:39,042 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:08:39,047 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:08:39,054 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.702 seconds (process running for 2.151)
+2025-02-27 17:08:39,056 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:08:39,063 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:08:50,201 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43100 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:08:50,203 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:08:50,429 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:08:50,754 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:08:51,008 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:08:51,016 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:08:51,017 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:08:51,017 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:08:51,057 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:08:51,057 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 699 ms
+2025-02-27 17:08:51,498 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:08:51,735 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:08:51,741 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:08:51,749 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.808 seconds (process running for 2.269)
+2025-02-27 17:08:51,752 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:08:51,759 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:09:30,726 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43110 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:09:30,728 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:09:30,887 [main] WARN  [o.s.core.annotation.AnnotationTypeMapping] - traceId:  AnnotationTypeMapping.java:321 - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2025-02-27 17:09:31,220 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:09:31,478 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:09:31,486 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:09:31,487 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:09:31,487 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:09:31,531 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:09:31,531 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 689 ms
+2025-02-27 17:09:31,956 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:09:32,203 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:09:32,208 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:09:32,216 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.688 seconds (process running for 2.128)
+2025-02-27 17:09:32,218 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:09:32,225 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:10:36,644 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43134 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:10:36,645 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:10:37,126 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo.*.mapper]' package. Please check your configuration.
+2025-02-27 17:10:37,384 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:10:37,391 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:10:37,392 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:10:37,392 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:10:37,430 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:10:37,430 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 672 ms
+2025-02-27 17:10:37,846 [main] INFO  [o.s.v.beanvalidation.OptionalValidatorFactoryBean] - traceId:  OptionalValidatorFactoryBean.java:48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-27 17:10:38,079 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:10:38,085 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:10:38,092 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.639 seconds (process running for 2.083)
+2025-02-27 17:10:38,095 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:10:38,102 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:14:07,014 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43213 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:14:07,016 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:14:07,456 [main] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - traceId:  Logger.java:44 - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-02-27 17:14:07,725 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:14:07,733 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:14:07,734 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:14:07,734 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:14:07,776 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:14:07,776 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 634 ms
+2025-02-27 17:14:08,329 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:14:08,334 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:14:08,340 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.493 seconds (process running for 1.959)
+2025-02-27 17:14:08,342 [main] INFO  [o.s.b.a.logging.ConditionEvaluationReportLogger] - traceId:  ConditionEvaluationReportLogger.java:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 17:14:08,349 [main] ERROR [org.springframework.boot.SpringApplication] - traceId:  SpringApplication.java:859 - Application run failed
+org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'ddlApplicationRunner' is expected to be of type 'org.springframework.boot.Runner' but was actually of type 'org.springframework.beans.factory.support.NullBean'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.adaptBeanInstance(AbstractBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:403)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:770)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:22)
+2025-02-27 17:15:19,069 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43235 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:15:19,070 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:15:19,591 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:15:19,599 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:15:19,600 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:15:19,600 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:15:19,638 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:15:19,639 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 451 ms
+2025-02-27 17:15:20,153 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:15:20,167 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:15:20,173 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.265 seconds (process running for 1.706)
+2025-02-27 17:16:57,235 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:50 - Starting DemoApplication using Java 17.0.8 with PID 43294 (/Users/liyang/IdeaProjects/ar-deeplearn-test/target/classes started by liyang in /Users/liyang/IdeaProjects/ar-deeplearn-test)
+2025-02-27 17:16:57,236 [main] INFO  [com.example.demo.DemoApplication] - traceId:  SpringApplication.java:654 - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 17:16:57,782 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:111 - Tomcat initialized with port 8080 (http)
+2025-02-27 17:16:57,790 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:16:57,791 [main] INFO  [org.apache.catalina.core.StandardService] - traceId:  DirectJDKLog.java:173 - Starting service [Tomcat]
+2025-02-27 17:16:57,791 [main] INFO  [org.apache.catalina.core.StandardEngine] - traceId:  DirectJDKLog.java:173 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-27 17:16:57,828 [main] INFO  [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]] - traceId:  DirectJDKLog.java:173 - Initializing Spring embedded WebApplicationContext
+2025-02-27 17:16:57,828 [main] INFO  [o.s.b.w.s.c.ServletWebServerApplicationContext] - traceId:  ServletWebServerApplicationContext.java:296 - Root WebApplicationContext: initialization completed in 460 ms
+2025-02-27 17:16:58,362 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol] - traceId:  DirectJDKLog.java:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-27 17:16:58,367 [main] INFO  [o.s.boot.web.embedded.tomcat.TomcatWebServer] - traceId:  TomcatWebServer.java:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-27 17:16:58,373 [main] INFO  [com.example.demo.DemoApplication] - traceId:  StartupInfoLogger.java:56 - Started DemoApplication in 1.298 seconds (process running for 1.864)
