@@ -63,30 +63,29 @@ public class ModelConfig {
 //                .build();
 //    }
 
-    @Bean
-    public MilvusServiceClient milvusClient() {
-        return new MilvusServiceClient(ConnectParam.newBuilder()
-                .withAuthorization("minioadmin", "minioadmin")
-                .withUri(MILVUS_URL)
-                .build());
-    }
+//    @Bean
+//    public MilvusServiceClient milvusClient() {
+//        return new MilvusServiceClient(ConnectParam.newBuilder()
+//                .withAuthorization("minioadmin", "minioadmin")
+//                .withUri(MILVUS_URL)
+//                .build());
+//    }
+//
+//    @Bean
+//    public JedisPooled jedisPooled() {
+//        return new JedisPooled("127.0.0.1", 6379);
+//    }
 
-    @Bean
-    public JedisPooled jedisPooled() {
-        return new JedisPooled("r-bp1nq29kupvzls7jys.redis.rds.aliyuncs.com",
-                6379);
-    }
-
-    @Bean
-    public VectorStore vectorStore(JedisPooled jedisPooled, EmbeddingModel embeddingModel) {
-        return RedisVectorStore.builder(jedisPooled, embeddingModel)
-                .indexName("custom-index")                // Optional: defaults to "spring-ai-index"
-                .prefix("custom-prefix")                  // Optional: defaults to "embedding:"
-                .metadataFields(                         // Optional: define metadata fields for filtering
-                        RedisVectorStore.MetadataField.tag("country"),
-                        RedisVectorStore.MetadataField.numeric("year"))
-                .initializeSchema(true)                   // Optional: defaults to false
-                .batchingStrategy(new TokenCountBatchingStrategy()) // Optional: defaults to TokenCountBatchingStrategy
-                .build();
-    }
+//    @Bean
+//    public VectorStore vectorStore(JedisPooled jedisPooled, EmbeddingModel embeddingModel) {
+//        return RedisVectorStore.builder(jedisPooled, embeddingModel)
+//                .indexName("custom-index")                // Optional: defaults to "spring-ai-index"
+//                .prefix("custom-prefix")                  // Optional: defaults to "embedding:"
+//                .metadataFields(                         // Optional: define metadata fields for filtering
+//                        RedisVectorStore.MetadataField.tag("country"),
+//                        RedisVectorStore.MetadataField.numeric("year"))
+//                .initializeSchema(true)                   // Optional: defaults to false
+//                .batchingStrategy(new TokenCountBatchingStrategy()) // Optional: defaults to TokenCountBatchingStrategy
+//                .build();
+//    }
 }

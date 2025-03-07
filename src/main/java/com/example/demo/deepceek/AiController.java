@@ -39,10 +39,10 @@ public class AiController {
     public static final String QIAN_WEN_MODEL = "qwen-plus";
     @Resource
     private OpenAiChatModel chatModel;
-    @Resource
-    private EmbeddingModel embeddingModel;
-    @Resource
-    private VectorStore vectorStore;
+//    @Resource
+//    private EmbeddingModel embeddingModel;
+//    @Resource
+//    private VectorStore vectorStore;
     private final List<Message> chatHistoryList = new ArrayList<>();
     @PostConstruct
     public void init () {
@@ -64,35 +64,35 @@ public class AiController {
         return "服务繁忙，请稍后重试！";
     }
 
-    @PostMapping("/embed" )
-    public EmbeddingResponse embed(@RequestBody AiParam aiParam) {
-        return this.embeddingModel.embedForResponse(
-                List.of("你好", aiParam.getMessage())
-        );
-    }
+//    @PostMapping("/embed" )
+//    public EmbeddingResponse embed(@RequestBody AiParam aiParam) {
+//        return this.embeddingModel.embedForResponse(
+//                List.of("你好", aiParam.getMessage())
+//        );
+//    }
 
-    @PostMapping("/milvus/add" )
-    public Boolean milvusAdd(@RequestBody AiParam aiParam) {
-        List <Document> documents = aiParam.getMessages().stream()
-                .map(s -> new Document(s, Map.of("meta1", "meta1"))).collect(Collectors.toList());
-        documents.addAll(List.of(
-                new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
-                new Document("The World is Big and Salvation Lurks Around the Corner"),
-                new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2"))));
-        vectorStore.add(documents);
-        return true;
-    }
-
-    @PostMapping("/milvus/search" )
-    public List<Document> search(@RequestBody AiParam aiParam) {
-        FilterExpressionBuilder b = new FilterExpressionBuilder();
-        List<Document> documentList =vectorStore.similaritySearch(SearchRequest.builder()
-                .query(aiParam.getMessage())
-                .topK(5)
-                .similarityThreshold(0.5)
-                .filterExpression(b.and(
-                        b.in("author","john", "jill"),
-                        b.eq("article_type", "blog")).build()).build());
-        return documentList;
-    }
+//    @PostMapping("/milvus/add" )
+//    public Boolean milvusAdd(@RequestBody AiParam aiParam) {
+//        List <Document> documents = aiParam.getMessages().stream()
+//                .map(s -> new Document(s, Map.of("meta1", "meta1"))).collect(Collectors.toList());
+//        documents.addAll(List.of(
+//                new Document("Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!! Spring AI rocks!!", Map.of("meta1", "meta1")),
+//                new Document("The World is Big and Salvation Lurks Around the Corner"),
+//                new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2"))));
+//        vectorStore.add(documents);
+//        return true;
+//    }
+//
+//    @PostMapping("/milvus/search" )
+//    public List<Document> search(@RequestBody AiParam aiParam) {
+//        FilterExpressionBuilder b = new FilterExpressionBuilder();
+//        List<Document> documentList =vectorStore.similaritySearch(SearchRequest.builder()
+//                .query(aiParam.getMessage())
+//                .topK(5)
+//                .similarityThreshold(0.5)
+//                .filterExpression(b.and(
+//                        b.in("author","john", "jill"),
+//                        b.eq("article_type", "blog")).build()).build());
+//        return documentList;
+//    }
 }

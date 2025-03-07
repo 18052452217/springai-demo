@@ -19,4 +19,4 @@ spring:
     password: ${MYSQL_PASSWORD:Rokid@2023}
   data:
     redis:
-      uri: r-bp1nq29kupvzls7jys.redis.rds.aliyuncs.com
+      uri: redis://${REDIS_HOST:127.0.0.1}:${REDIS_PORT:6379}
